@@ -5,9 +5,9 @@
 {% block content %}
     <div class="column is-3">
         <h1 class="menu-label title is-4">Гостевая книга</h1>
-        <ul class="menu-list">
-            <a class="btn btn-default" href="{{ path('create_review') }}">Добавить отзыв</a><br>
-        </ul>
+        <br>
+        <a class="btn btn-outline-success" href="{{ path('create_review') }}">Добавить отзыв</a>
+        <br><hr>
     </div>
     <div>
         {% for review in reviews %}
@@ -21,6 +21,7 @@
                     </a>
                 </li>
             </ul>
+            <hr>
         {% endfor %}
     </div>
 {% endblock %}
